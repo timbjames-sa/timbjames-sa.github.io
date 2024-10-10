@@ -267,7 +267,7 @@
           if (sectionCount < videos.length) {
               newSection = `
                 <div class="video-section">
-                  <video ${isMuted ? 'muted' : ''} loop controls data-title="${video.name}" data-avatar="${video.profile}" onclick="foobar()"> // muted
+                  <video ${isMuted ? 'muted' : ''} loop controls playsinline data-title="${video.name}" data-avatar="${video.profile}" onclick="foobar()"> // muted
                     <source src="${video.url}" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
